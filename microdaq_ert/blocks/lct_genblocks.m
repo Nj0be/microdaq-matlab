@@ -60,7 +60,7 @@ MDAQQEP.Options.supportsMultipleExecInstances = true;
 %% Encoder
 MDAQENC = legacy_code('initialize');
 MDAQENC.SFunctionName = 'sfun_MDAQENC';
-MDAQENC.HeaderFiles = {'mdaq_pru.h'};
+MDAQENC.HeaderFiles = {'mdaqenc.h','mdaq_pru.h'};
 MDAQENC.SourceFiles = {'mdaqenc2.c'};
 MDAQENC.IncPaths = {'mdaq'};
 MDAQENC.SrcPaths = {'mdaq'};
@@ -73,7 +73,7 @@ MDAQENC.Options.supportsMultipleExecInstances = true;
 % PRU REG GET
 MDAQPRUREGSET = legacy_code('initialize');
 MDAQPRUREGSET.SFunctionName = 'sfun_MDAQPRUREGSET';
-MDAQPRUREGSET.HeaderFiles = {'mdaq_pru.h'};
+MDAQPRUREGSET.HeaderFiles = {'mdaqpru.h', 'mdaq_pru.h'};
 MDAQPRUREGSET.SourceFiles = {'mdaqpru.c'};
 MDAQPRUREGSET.IncPaths = {'mdaq'};
 MDAQPRUREGSET.SrcPaths = {'mdaq'};
@@ -85,7 +85,7 @@ MDAQPRUREGSET.Options.supportsMultipleExecInstances = true;
 % PRU REG SET
 MDAQPRUREGGET = legacy_code('initialize');
 MDAQPRUREGGET.SFunctionName = 'sfun_MDAQPRUREGGET';
-MDAQPRUREGGET.HeaderFiles = {'mdaq_pru.h'};
+MDAQPRUREGGET.HeaderFiles = {'mdaqpru.h', 'mdaq_pru.h'};
 MDAQPRUREGGET.SourceFiles = {'mdaqpru.c'};
 MDAQPRUREGGET.IncPaths = {'mdaq'};
 MDAQPRUREGGET.SrcPaths = {'mdaq'};
